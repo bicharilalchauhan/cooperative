@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-container": "#fdab12",
+                    "secondary": "#825500",
+                    "on-surface-variant": "#404943",
+                    "tertiary-fixed-dim": "#86d7ad",
+                    "surface-variant": "#dce2f3",
+                    "on-background": "#151c27",
+                    "surface": "#f9f9ff",
+                    "surface-tint": "#2c694e",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#f9f9ff",
+                    "primary-container": "#2d6a4f",
+                    "light-gray": "#EFEFEF",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#2a313d",
+                    "on-error-container": "#93000a",
+                    "dark-charcoal": "#1A1A2E",
+                    "background": "#f9f9ff",
+                    "primary": "#0f5238",
+                    "on-primary-fixed": "#002114",
+                    "warm-gold": "#FFD166",
+                    "surface-container-highest": "#dce2f3",
+                    "on-tertiary-container": "#98eabf",
+                    "inverse-primary": "#95d4b3",
+                    "on-primary-fixed-variant": "#0e5138",
+                    "surface-container": "#e7eefe",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed-variant": "#005236",
+                    "tertiary": "#005236",
+                    "surface-dim": "#d3daea",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#e2e8f8",
+                    "primary-fixed": "#b1f0ce",
+                    "outline-variant": "#bfc9c1",
+                    "secondary-fixed-dim": "#ffb951",
+                    "outline": "#707973",
+                    "on-tertiary-fixed": "#002113",
+                    "soft-green": "#D8F3DC",
+                    "error-container": "#ffdad6",
+                    "on-secondary-container": "#684300",
+                    "off-white": "#F9F9F7",
+                    "primary-fixed-dim": "#95d4b3",
+                    "surface-container-low": "#f0f3ff",
+                    "on-secondary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed": "#291800",
+                    "secondary-fixed": "#ffddb3",
+                    "on-primary-container": "#a8e7c5",
+                    "tertiary-container": "#116c4a",
+                    "tertiary-fixed": "#a1f4c8",
+                    "on-surface": "#151c27",
+                    "inverse-on-surface": "#ebf1ff",
+                    "on-secondary-fixed-variant": "#633f00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "md": "16px",
+                    "container-max": "1200px",
+                    "section-v": "80px",
+                    "xl": "64px",
+                    "xs": "4px",
+                    "lg": "32px",
+                    "base": "8px",
+                    "2xl": "96px",
+                    "sm": "8px"
+            },
+            "fontFamily": {
+                    "label": ["Inter"],
+                    "button": ["Inter"],
+                    "nav-link": ["Inter"],
+                    "display-hero-mobile": ["Poppins"],
+                    "h1": ["Poppins"],
+                    "caption": ["Inter"],
+                    "h3": ["Poppins"],
+                    "display-hero": ["Poppins"],
+                    "body-lg": ["Inter"],
+                    "h2": ["Poppins"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label": ["14px", {"lineHeight": "1.0", "fontWeight": "500"}],
+                    "button": ["15px", {"lineHeight": "1.0", "fontWeight": "600"}],
+                    "nav-link": ["15px", {"lineHeight": "1.0", "fontWeight": "500"}],
+                    "display-hero-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "h1": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "caption": ["13px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "h3": ["24px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "display-hero": ["64px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "h2": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .forest-overlay {
+            position: relative;
+        }
+        .forest-overlay::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(45, 106, 79, 0.1);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary selection:text-white">
+<!-- TopNavBar -->
+<nav class="sticky top-0 z-50 flex justify-between items-center px-20 w-full h-[72px] bg-surface/90 backdrop-blur-md border-b border-light-gray">
+<div class="text-h3 font-h3 font-bold text-primary">Community Credit Union</div>
+<div class="hidden md:flex gap-lg items-center">
+<a class="font-nav-link text-nav-link text-on-surface-variant hover:text-tertiary transition-colors duration-200" href="#">Home</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant hover:text-tertiary transition-colors duration-200" href="#">About Us</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant hover:text-tertiary transition-colors duration-200" href="#">Services</a>
+<a class="font-nav-link text-nav-link text-primary font-bold border-b-2 border-primary pb-1" href="#">Membership</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant hover:text-tertiary transition-colors duration-200" href="#">Contact</a>
+</div>
+<button class="bg-primary hover:bg-emerald-700 text-white font-button text-button py-3 px-7 rounded-lg transition-all active:scale-95">Join Now</button>
+</nav>
+<!-- Hero Section -->
+<header class="relative w-full h-[500px] flex items-center px-20 overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover forest-overlay" data-alt="A diverse group of smiling young professionals standing together in a bright, modern open-plan office. The setting is filled with natural light and minimalist decor, emphasizing a sense of community and growth. The image has a subtle forest green tint overlay that harmonizes with the brand's earthy color palette, creating an atmosphere of trust and youthful energy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4qKe-4EGYUL3r6WO0eqfqG9Gbp69gJanykWJe1xGS4l-cCLxvjgQZgQRsFHuM4qhxuk1K7uFpel7cvyzWlXp7BZNDI2zzRFqtwY2HfRPpg4cz_KmfbLHpA7hNKWeUMYaAgT5e2uVj1XOO-VmnXl-birf70AxnYIBs2W4ujOi4-8z0k586VfNSYcZUzVQ5ex9l1WwzQCIDX2egbGH3R9Vlb7f-_0nkKzs04kealA6Vc3LzFthiwsK8dcrRVvIs3q01_SPpR6nOrJqv"/>
+<div class="relative z-10 max-w-2xl bg-white/80 backdrop-blur-md p-xl rounded-xl border border-light-gray shadow-sm">
+<h1 class="font-h1 text-h1 text-primary mb-md">Grow Your Future With Us.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg">Join a community-driven financial ecosystem designed specifically for the next generation of leaders and innovators.</p>
+<div class="flex gap-md">
+<button class="bg-warm-gold hover:bg-secondary-container text-dark-charcoal font-button text-button py-3 px-7 rounded-lg transition-all">Become a Member</button>
+<button class="border-2 border-primary text-primary font-button text-button py-3 px-7 rounded-lg transition-all hover:bg-soft-green">Learn More</button>
+</div>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-20 py-2xl space-y-2xl">
+<!-- Why Become a Member? (Bento Style) -->
+<section>
+<div class="text-center mb-xl">
+<h2 class="font-h2 text-h2 text-primary">Why Become a Member?</h2>
+<div class="h-1 w-20 bg-warm-gold mx-auto mt-xs"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<div class="md:col-span-2 bg-white p-lg rounded-xl border border-light-gray shadow-sm hover:shadow-md transition-shadow group">
+<span class="material-symbols-outlined text-4xl text-[#10B981] mb-md group-hover:scale-110 transition-transform block" data-icon="trending_up">trending_up</span>
+<h3 class="font-h3 text-h3 text-primary mb-base">Competitive Interest Rates</h3>
+<p class="text-on-surface-variant">We prioritize your growth by offering some of the highest savings rates and lowest loan rates in the region, ensuring your capital works harder for you.</p>
+</div>
+<div class="bg-white p-lg rounded-xl border border-light-gray shadow-sm hover:shadow-md transition-shadow group">
+<span class="material-symbols-outlined text-4xl text-[#10B981] mb-md group-hover:scale-110 transition-transform block" data-icon="shield_person">shield_person</span>
+<h3 class="font-h3 text-h3 text-primary mb-base">Member Ownership</h3>
+<p class="text-on-surface-variant">You're not just a customer; you're a shareholder with a voice in our direction.</p>
+</div>
+<div class="bg-white p-lg rounded-xl border border-light-gray shadow-sm hover:shadow-md transition-shadow group">
+<span class="material-symbols-outlined text-4xl text-[#10B981] mb-md group-hover:scale-110 transition-transform block" data-icon="devices">devices</span>
+<h3 class="font-h3 text-h3 text-primary mb-base">Modern Banking</h3>
+<p class="text-on-surface-variant">Seamless digital experience with our mobile-first banking platform.</p>
+</div>
+<div class="md:col-span-2 bg-primary text-white p-lg rounded-xl shadow-sm hover:shadow-md transition-shadow group flex items-center gap-lg">
+<div class="flex-1">
+<h3 class="font-h3 text-h3 text-warm-gold mb-base">Community Investment</h3>
+<p class="opacity-90">Every dollar you save helps fund local entrepreneurs and youth initiatives within our local community.</p>
+</div>
+<span class="material-symbols-outlined text-[64px] text-warm-gold/20 hidden md:block" data-icon="volunteer_activism">volunteer_activism</span>
+</div>
+</div>
+</section>
+<!-- Who Can Join? -->
+<section class="bg-off-white rounded-2xl p-xl border border-light-gray">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
+<div>
+<h2 class="font-h2 text-h2 text-primary mb-md">Who Can Join?</h2>
+<p class="text-on-surface-variant mb-lg">Membership is open to individuals who meet at least one of the following criteria:</p>
+<ul class="space-y-md">
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span>Residents of the Metropolitan Area between the ages of 18 and 35.</span>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span>Full-time students enrolled in accredited local universities.</span>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span>Employees of our partner corporate organizations.</span>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span>Direct family members of existing Community Credit Union members.</span>
+</li>
+</ul>
+</div>
+<div class="relative rounded-xl overflow-hidden shadow-lg h-full min-h-[300px]">
+<img class="absolute inset-0 w-full h-full object-cover forest-overlay" data-alt="A group of young diverse students and professionals sitting in a minimalist, sun-drenched library workspace, collaborating on laptops. The atmosphere is professional yet relaxed, featuring clean lines and organic textures. A soft forest green tint is applied to the image to maintain brand consistency with the credit union's modern identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS9DY3F5oWqsrVn1Xfj1zC_LgeI_5bTlR11QYUWD_ZwQBPxdBLFz9VvQRaJt14XIIVbLKbawHDM9IB4JRiI2Wc1K8X-4_dqD7ve3Y5Te6DGxfqus4UtoN_HBzQt8U6EzSJnab66AF-_frIAms4nbj4Rz2R_3eGLEqXoMhfS084fOQOwYaIL5OLKowQtNyhu24_HHE3iDukW4sW2Mf2tfLACkpz-8DuZS57ihpzoJqU71KYSZJ95H93pVOyRNo_ck8ASzne6G05bZdD"/>
+</div>
+</div>
+</section>
+<!-- How to Join (Process) -->
+<section>
+<div class="text-center mb-xl">
+<h2 class="font-h2 text-h2 text-primary">Simple 4-Step Process</h2>
+<p class="text-on-surface-variant">Becoming a member takes less than 10 minutes.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-lg relative">
+<!-- Connector Line -->
+<div class="hidden md:block absolute top-10 left-0 w-full h-0.5 bg-light-gray -z-10"></div>
+<div class="text-center space-y-md">
+<div class="w-20 h-20 bg-white border-2 border-primary rounded-full flex items-center justify-center mx-auto shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl font-bold" data-icon="edit_note">edit_note</span>
+</div>
+<div>
+<h4 class="font-bold text-primary">1. Fill form</h4>
+<p class="text-caption text-on-surface-variant">Complete our digital application with basic details.</p>
+</div>
+</div>
+<div class="text-center space-y-md">
+<div class="w-20 h-20 bg-white border-2 border-primary rounded-full flex items-center justify-center mx-auto shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl font-bold" data-icon="badge">badge</span>
+</div>
+<div>
+<h4 class="font-bold text-primary">2. Submit ID</h4>
+<p class="text-caption text-on-surface-variant">Upload a clear photo of your valid government ID.</p>
+</div>
+</div>
+<div class="text-center space-y-md">
+<div class="w-20 h-20 bg-white border-2 border-primary rounded-full flex items-center justify-center mx-auto shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl font-bold" data-icon="account_balance_wallet">account_balance_wallet</span>
+</div>
+<div>
+<h4 class="font-bold text-primary">3. Deposit Share</h4>
+<p class="text-caption text-on-surface-variant">Transfer your initial share capital via bank or card.</p>
+</div>
+</div>
+<div class="text-center space-y-md">
+<div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto shadow-sm">
+<span class="material-symbols-outlined text-white text-3xl font-bold" data-icon="verified">verified</span>
+</div>
+<div>
+<h4 class="font-bold text-primary">4. Welcome</h4>
+<p class="text-caption text-on-surface-variant">Receive your membership kit and start saving!</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Membership Fee Table -->
+<section>
+<div class="text-center mb-xl">
+<h2 class="font-h2 text-h2 text-primary">Membership Investment</h2>
+<p class="text-on-surface-variant">Transparency is key to our relationship.</p>
+</div>
+<div class="overflow-hidden rounded-xl border border-light-gray shadow-sm">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-soft-green">
+<th class="py-lg px-xl text-primary font-bold">Type</th>
+<th class="py-lg px-xl text-primary font-bold">Share Capital</th>
+<th class="py-lg px-xl text-primary font-bold">Annual Fee</th>
+</tr>
+</thead>
+<tbody class="bg-white">
+<tr class="border-b border-light-gray">
+<td class="py-lg px-xl font-medium">Student Member</td>
+<td class="py-lg px-xl">$50.00</td>
+<td class="py-lg px-xl">$10.00</td>
+</tr>
+<tr class="border-b border-light-gray">
+<td class="py-lg px-xl font-medium">Regular Member</td>
+<td class="py-lg px-xl">$200.00</td>
+<td class="py-lg px-xl">$25.00</td>
+</tr>
+<tr class="bg-off-white/50">
+<td class="py-lg px-xl font-medium">Corporate Associate</td>
+<td class="py-lg px-xl">$500.00</td>
+<td class="py-lg px-xl">$50.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mt-lg p-md bg-surface-container rounded-lg flex items-center gap-md">
+<span class="material-symbols-outlined text-primary" data-icon="info">info</span>
+<p class="text-caption text-on-surface-variant">Share capital is refundable upon membership withdrawal, subject to credit union bylaws.</p>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-primary text-white rounded-3xl p-2xl text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-warm-gold opacity-10 rounded-full -mr-32 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-white opacity-5 rounded-full -ml-32 -mb-32"></div>
+<h2 class="font-h1 text-h1 mb-md">Ready to join our community?</h2>
+<p class="font-body-lg text-body-lg mb-xl max-w-xl mx-auto opacity-90">Start your journey toward financial freedom today with Community Credit Union.</p>
+<button class="bg-warm-gold hover:bg-secondary-container text-dark-charcoal font-button text-button py-4 px-10 rounded-lg transition-all transform hover:scale-105 active:scale-95 shadow-lg">Apply for Membership Now</button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-on-background border-t border-outline">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-lg px-20 py-2xl max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<div class="text-h2 font-h2 text-surface mb-md">CCU</div>
+<p class="text-surface-variant text-caption">Empowering youth for a brighter future through financial education and community-driven banking.</p>
+</div>
+<div>
+<h5 class="text-surface font-bold mb-md">Products</h5>
+<ul class="space-y-sm">
+<li><a class="text-surface-variant hover:text-secondary-container transition-colors text-body-md" href="#">Savings &amp; Loans</a></li>
+<li><a class="text-surface-variant hover:text-secondary-container transition-colors text-body-md" href="#">Digital Banking</a></li>
+<li><a class="text-surface-variant hover:text-secondary-container transition-colors text-body-md" href="#">Insurance</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-surface font-bold mb-md">Company</h5>
+<ul class="space-y-sm">
+<li><a class="text-surface-variant hover:text-secondary-container transition-colors text-body-md" href="#">Mission &amp; Values</a></li>
+<li><a class="text-surface-variant hover:text-secondary-container transition-colors text-body-md" href="#">Branch Locations</a></li>
+<li><a class="text-surface-variant hover:text-secondary-container transition-colors text-body-md" href="#">Investment Plans</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-surface font-bold mb-md">Join Our Newsletter</h5>
+<p class="text-surface-variant text-caption mb-md">Stay updated with financial tips and community news.</p>
+<div class="flex">
+<input class="bg-on-surface-variant/20 border-none rounded-l-lg text-white w-full focus:ring-1 focus:ring-warm-gold" placeholder="Email address" type="email"/>
+<button class="bg-warm-gold p-2 rounded-r-lg"><span class="material-symbols-outlined text-dark-charcoal" data-icon="send">send</span></button>
+</div>
+</div>
+</div>
+<div class="px-20 py-lg border-t border-outline-variant max-w-container-max mx-auto text-center">
+<p class="text-surface-variant text-caption">© 2024 Community Credit Union. Empowering Youth for a Brighter Future.</p>
+</div>
+</footer>
+</body></html>

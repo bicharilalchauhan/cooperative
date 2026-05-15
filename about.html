@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Community Credit Union</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-container": "#fdab12",
+                    "secondary": "#825500",
+                    "on-surface-variant": "#404943",
+                    "tertiary-fixed-dim": "#86d7ad",
+                    "surface-variant": "#dce2f3",
+                    "on-background": "#151c27",
+                    "surface": "#f9f9ff",
+                    "surface-tint": "#2c694e",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#f9f9ff",
+                    "primary-container": "#2d6a4f",
+                    "light-gray": "#EFEFEF",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#2a313d",
+                    "on-error-container": "#93000a",
+                    "dark-charcoal": "#1A1A2E",
+                    "background": "#f9f9ff",
+                    "primary": "#0f5238",
+                    "on-primary-fixed": "#002114",
+                    "warm-gold": "#FFD166",
+                    "surface-container-highest": "#dce2f3",
+                    "on-tertiary-container": "#98eabf",
+                    "inverse-primary": "#95d4b3",
+                    "on-primary-fixed-variant": "#0e5138",
+                    "surface-container": "#e7eefe",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed-variant": "#005236",
+                    "tertiary": "#005236",
+                    "surface-dim": "#d3daea",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#e2e8f8",
+                    "primary-fixed": "#b1f0ce",
+                    "outline-variant": "#bfc9c1",
+                    "secondary-fixed-dim": "#ffb951",
+                    "outline": "#707973",
+                    "on-tertiary-fixed": "#002113",
+                    "soft-green": "#D8F3DC",
+                    "error-container": "#ffdad6",
+                    "on-secondary-container": "#684300",
+                    "off-white": "#F9F9F7",
+                    "primary-fixed-dim": "#95d4b3",
+                    "surface-container-low": "#f0f3ff",
+                    "on-secondary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed": "#291800",
+                    "secondary-fixed": "#ffddb3",
+                    "on-primary-container": "#a8e7c5",
+                    "tertiary-container": "#116c4a",
+                    "tertiary-fixed": "#a1f4c8",
+                    "on-surface": "#151c27",
+                    "inverse-on-surface": "#ebf1ff",
+                    "on-secondary-fixed-variant": "#633f00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "md": "16px",
+                    "container-max": "1200px",
+                    "section-v": "80px",
+                    "xl": "64px",
+                    "xs": "4px",
+                    "lg": "32px",
+                    "base": "8px",
+                    "2xl": "96px",
+                    "sm": "8px"
+            },
+            "fontFamily": {
+                    "label": ["Inter"],
+                    "button": ["Inter"],
+                    "nav-link": ["Inter"],
+                    "display-hero-mobile": ["Poppins"],
+                    "h1": ["Poppins"],
+                    "caption": ["Inter"],
+                    "h3": ["Poppins"],
+                    "display-hero": ["Poppins"],
+                    "body-lg": ["Inter"],
+                    "h2": ["Poppins"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label": ["14px", {"lineHeight": "1.0", "letterSpacing": "normal", "fontWeight": "500"}],
+                    "button": ["15px", {"lineHeight": "1.0", "letterSpacing": "normal", "fontWeight": "600"}],
+                    "nav-link": ["15px", {"lineHeight": "1.0", "letterSpacing": "normal", "fontWeight": "500"}],
+                    "display-hero-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "h1": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "caption": ["13px", {"lineHeight": "1.6", "letterSpacing": "normal", "fontWeight": "400"}],
+                    "h3": ["24px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                    "display-hero": ["64px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "normal", "fontWeight": "400"}],
+                    "h2": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "normal", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .image-overlay {
+            position: relative;
+        }
+        .image-overlay::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(45, 106, 79, 0.1);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar -->
+<nav class="sticky top-0 z-50 flex justify-between items-center px-20 w-full h-[72px] bg-surface/90 backdrop-blur-md border-b border-light-gray">
+<div class="text-h3 font-h3 font-bold text-primary">Community Credit Union</div>
+<div class="hidden md:flex items-center gap-lg">
+<a class="font-nav-link text-nav-link text-on-surface-variant hover:text-tertiary transition-colors duration-200" href="#">Home</a>
+<a class="font-nav-link text-nav-link text-primary font-bold border-b-2 border-primary pb-1" href="#">About Us</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant hover:text-tertiary transition-colors duration-200" href="#">Services</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant hover:text-tertiary transition-colors duration-200" href="#">Membership</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant hover:text-tertiary transition-colors duration-200" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary font-button text-button py-3 px-[28px] rounded-lg hover:bg-primary-container transition-all active:opacity-80 active:scale-95">
+            Join Now
+        </button>
+</nav>
+<main class="max-w-container-max mx-auto px-20">
+<!-- Hero / Who We Are -->
+<section class="py-2xl flex flex-col md:flex-row items-center gap-xl">
+<div class="flex-1 space-y-lg">
+<span class="bg-soft-green text-primary px-md py-xs rounded-full font-label text-label uppercase tracking-wider">Who We Are</span>
+<h1 class="font-h1 text-h1 text-on-background">Your Future, Owned by You.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    Community Credit Union is a member-owned financial institution. Unlike traditional banks, we operate as a not-for-profit cooperative where every member is an owner with a voice. Our earnings are returned to you in the form of better rates and lower fees.
+                </p>
+<div class="flex gap-md">
+<button class="bg-secondary-container text-dark-charcoal font-button text-button py-3 px-[28px] rounded-lg hover:bg-warm-gold transition-all">Start Your Journey</button>
+<button class="border-2 border-primary text-primary font-button text-button py-3 px-[28px] rounded-lg hover:bg-soft-green transition-all">Our Impact</button>
+</div>
+</div>
+<div class="flex-1 w-full relative group">
+<div class="absolute -inset-4 bg-primary/5 rounded-2xl -z-10 group-hover:bg-primary/10 transition-colors"></div>
+<img class="w-full h-[480px] object-cover rounded-xl shadow-lg image-overlay" data-alt="A group of diverse young adults collaborating around a modern wooden table in a bright, sunlit architectural space with floor-to-ceiling windows. The scene is bathed in high-key, natural morning light, featuring a clean minimalist aesthetic. Subtle forest green tones are integrated into the modern decor, reflecting a professional yet energetic atmosphere of growth and mutual trust." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIxcYXU8IPv_5c-FGX5s0wvn7OiM5Woi3V5FjoGXVkK7wKwVxh35KLKCjDOs0bAYLzYa5q5DFGiacWlVxzZiggH-He4NHAc724HN2PUxC5xQH6UqGoT9S8aBhsfUuIcP94EA3NlTYpBJS_d5RRE_pnAAFjm4-bgZX8rjcqT1pS9houHqk0T5stYgUcWJ9vgLyBwFY4Pe5Pn0Apu6wEMj5djjBrQ4SoSrClMB7fT0DN6Vbn6MvFckxG0sRHphR_Arjxk1qhyrLjOASE"/>
+</div>
+</section>
+<!-- Mission Statement -->
+<section class="py-2xl bg-on-background text-surface rounded-[32px] px-xl text-center relative overflow-hidden">
+<div class="relative z-10 max-w-3xl mx-auto space-y-md">
+<h2 class="font-h2 text-h2">Our Mission</h2>
+<p class="font-h1 text-h1 leading-tight text-warm-gold">
+                    "To empower the next generation with the financial tools and knowledge needed to achieve true independence."
+                </p>
+<div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+<p class="font-body-md text-body-md text-surface-variant pt-md">
+                    We believe financial literacy is a right, not a privilege. By focusing on youth, we build a foundation for a healthier economic future for our entire community.
+                </p>
+</div>
+<!-- Decorative circle -->
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
+</section>
+<!-- Values Grid -->
+<section class="py-2xl">
+<div class="text-center mb-xl">
+<h2 class="font-h2 text-h2 text-on-background">Our Core Values</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">The pillars that define our relationship with our members.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-lg">
+<!-- Card 1: Growth -->
+<div class="bg-surface-container-lowest p-lg rounded-xl border border-light-gray hover:shadow-lg transition-all group">
+<div class="w-12 h-12 bg-soft-green rounded-lg flex items-center justify-center mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary" data-icon="trending_up">trending_up</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-background mb-sm">Growth</h3>
+<p class="font-caption text-caption text-on-surface-variant">We prioritize individual and community growth through sustainable financial strategies and education.</p>
+</div>
+<!-- Card 2: Cooperation -->
+<div class="bg-surface-container-lowest p-lg rounded-xl border border-light-gray hover:shadow-lg transition-all group">
+<div class="w-12 h-12 bg-soft-green rounded-lg flex items-center justify-center mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary" data-icon="groups">groups</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-background mb-sm">Cooperation</h3>
+<p class="font-caption text-caption text-on-surface-variant">Built on the 'people helping people' philosophy, our cooperative structure ensures everyone wins.</p>
+</div>
+<!-- Card 3: Trust -->
+<div class="bg-surface-container-lowest p-lg rounded-xl border border-light-gray hover:shadow-lg transition-all group">
+<div class="w-12 h-12 bg-secondary-container/20 rounded-lg flex items-center justify-center mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary" data-icon="verified_user">verified_user</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-background mb-sm">Trust</h3>
+<p class="font-caption text-caption text-on-surface-variant">Transparency is at the heart of everything we do. We operate with integrity to protect your future.</p>
+</div>
+<!-- Card 4: Innovation -->
+<div class="bg-surface-container-lowest p-lg rounded-xl border border-light-gray hover:shadow-lg transition-all group">
+<div class="w-12 h-12 bg-soft-green rounded-lg flex items-center justify-center mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary" data-icon="lightbulb">lightbulb</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-background mb-sm">Innovation</h3>
+<p class="font-caption text-caption text-on-surface-variant">Modern banking for a modern world. We leverage technology to make financial management seamless.</p>
+</div>
+</div>
+</section>
+<!-- Our Story / Asymmetric Layout -->
+<section class="py-2xl">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-xl items-center">
+<div class="md:col-span-5 space-y-md">
+<h2 class="font-h2 text-h2 text-on-background">Our Story</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        The cooperative movement began as a simple idea: that working together, ordinary people could achieve extraordinary financial stability. Founded in 1982, Community Credit Union was born from a local initiative to provide fair lending to students and young entrepreneurs who were often overlooked by major banks.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        From our humble beginnings in a community center basement to serving over 50,000 members today, our focus hasn't wavered. We remain committed to the democratic principles of the co-operative movement, ensuring every member has an equal seat at the table.
+                    </p>
+<div class="pt-md">
+<div class="flex items-center gap-md p-md bg-surface-container rounded-lg border border-outline-variant">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="history_edu">history_edu</span>
+<div>
+<p class="font-label text-label text-primary font-bold">Est. 1982</p>
+<p class="font-caption text-caption text-on-surface-variant">Over 40 years of community service.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-7 grid grid-cols-2 gap-md">
+<div class="space-y-md pt-xl">
+<img class="w-full h-64 object-cover rounded-xl image-overlay shadow-md" data-alt="An artistic black and white archival-style photograph depicting early cooperative pioneers meeting in a shared workspace. The image is enhanced with a subtle emerald green overlay, maintaining a bridge between historical heritage and modern brand identity. The lighting is soft and focused, emphasizing a sense of community and collaborative spirit." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9zIdy7W4YB3mlMgPREfykzTEydziihFimSGXcQ7TfSTEfZGSXpZ4xseT_AiXcxAEh9d7HcWs2agDrL-HMNLSzCpp8j4SuXvRPRzf3mA8iZ-gotM7blRRAdDzFj6dZuP-2jJ1a-99MxFgiLk-1M41Ten8O7K8tTQofqvraW2At_R_lQz1z2ucaVJq08GbuYdvYTkIH-meUJ98HCsZNf6Cq-kwDCVRArYjWF2K79u-nJxeJuO-GTGRd6cHV81gRMxxwy2duG51TbBcA"/>
+<img class="w-full h-80 object-cover rounded-xl image-overlay shadow-md" data-alt="A contemporary, bright office space where young professionals are engaging in a financial strategy workshop. The setting is minimalist and high-end, featuring light wood textures and glass partitions. The lighting is vibrant and optimistic, with a 10% forest green tint across the image to unify the modern financial brand's visual narrative." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9uOIHqD9dheLRuAmwREGx7eayIwNkPTXNR19C44CJIfoUDy9rk24TC-0RFIEt-E88X2705iVdG9SGWw0_WYw49_GlCA4SfvUWrPIgVOuUeQRRNqBrj_Lx1kFQ1w9_uMcdND8DVJIxiuY6g4-v5KfjtPgBtoQS7P1NMVJzlZ-n0xM_sBXCA1BIAJetxCqHE2hitVJhuRQEVrw-K8yRs7h_Tyj0gPFzykWAGkZEtuol-Qs6tPjW2Rcc3JamA2rf0wDWPwjoa_BKrAIj"/>
+</div>
+<div class="space-y-md">
+<img class="w-full h-80 object-cover rounded-xl image-overlay shadow-md" data-alt="A detailed close-up of a digital banking interface displayed on a high-resolution tablet, held by a young user in a park setting. Natural daylight filters through green leaves, creating beautiful bokeh. The interface reflects a clean, utilitarian design language consistent with modern fintech, using a palette of deep forest greens and warm gold accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBi49Arw2MIwAeBqzGsHUf1be8lYiPpR2M-TYLHQF-wg01eQy1ue0-52SSPFalE-v05TW-ixRlJOae_kC0T43RXz3ahmcVx9blnZ5CKYAoNoLVJwupZ7Z7i9xjV9ysDFs5SoJtyZl7fTJUfyCoOQ9ky5dggDAE4xbG6oTzBu35XTjwL101MJJ1n-yAjx_mUWyrpVALs7df8usj-Zp9Q_Wc2SUlLWitErStXKykg4b6GovKedyLsHkX2Ro0lQiaQIpJUhTWi9rswKWDd"/>
+<img class="w-full h-64 object-cover rounded-xl image-overlay shadow-md" data-alt="A collaborative team of diverse financial advisors in a high-tech meeting room with large digital displays showing growth charts. The environment is clean and spacious with a professional atmosphere. The image uses a high-contrast style with deep blacks and crisp whites, finished with a professional forest green color grade." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpCcmjXDV9cW05xxT50Z1cH9ga9CM_fXYtCfxmQUZuTviDzdLVnrjgpbempwn_TB1sNi4PLNLQncFa-nlnTfwYVuO9Dbn55jpM48cLEVHHzLD4K_STPm1iYUfXOGbmtfL_r8LQ1MHYZhDOUWY4yRceBVQS4ibJXTDNMRGJs7seUcHB2LRGsEEimSFt0BCricva5HaXQPvQlTAEtuHD6H0SkA0cqEy-57SGITv_hqiA9xLfU_kIoa6geij6zNfEkm-BqlrfdWmawAAd"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-on-background border-t border-outline">
+<div class="max-w-container-max mx-auto px-20 py-2xl grid grid-cols-1 md:grid-cols-4 gap-lg">
+<div class="space-y-md">
+<div class="text-h2 font-h2 text-surface">Community Credit Union</div>
+<p class="font-caption text-caption text-surface-variant max-w-xs">
+                    Empowering youth for a brighter future through member-owned financial services and community-driven initiatives.
+                </p>
+</div>
+<div class="space-y-md">
+<h4 class="font-label text-label text-surface font-bold">Solutions</h4>
+<ul class="space-y-sm">
+<li><a class="font-body-md text-body-md text-surface-variant hover:text-secondary-container transition-colors" href="#">Savings &amp; Loans</a></li>
+<li><a class="font-body-md text-body-md text-surface-variant hover:text-secondary-container transition-colors" href="#">Digital Banking</a></li>
+<li><a class="font-body-md text-body-md text-surface-variant hover:text-secondary-container transition-colors" href="#">Insurance</a></li>
+</ul>
+</div>
+<div class="space-y-md">
+<h4 class="font-label text-label text-surface font-bold">Resources</h4>
+<ul class="space-y-sm">
+<li><a class="font-body-md text-body-md text-surface-variant hover:text-secondary-container transition-colors" href="#">Investment Plans</a></li>
+<li><a class="font-body-md text-body-md text-surface-variant hover:text-secondary-container transition-colors" href="#">Mission &amp; Values</a></li>
+<li><a class="font-body-md text-body-md text-surface-variant hover:text-secondary-container transition-colors" href="#">Branch Locations</a></li>
+</ul>
+</div>
+<div class="space-y-md">
+<h4 class="font-label text-label text-surface font-bold">Connect</h4>
+<div class="flex gap-md">
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-surface hover:border-warm-gold transition-colors" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="share">share</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-surface hover:border-warm-gold transition-colors" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="language">language</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-surface hover:border-warm-gold transition-colors" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="mail">mail</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-20 py-md border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-md">
+<p class="font-caption text-caption text-on-surface-variant">© 2024 Community Credit Union. Empowering Youth for a Brighter Future.</p>
+<div class="flex gap-lg">
+<a class="font-caption text-caption text-on-surface-variant hover:text-surface transition-colors" href="#">Privacy Policy</a>
+<a class="font-caption text-caption text-on-surface-variant hover:text-surface transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>
